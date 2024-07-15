@@ -259,7 +259,7 @@
       "variables": [
         {
           "folded": true,
-          "name": "CurrentBeam",
+          "name": "CurrentWeapon",
           "type": "string",
           "value": "BeamA"
         },
@@ -1388,7 +1388,7 @@
                     "value": "SetStringVariable"
                   },
                   "parameters": [
-                    "CurrentBeam",
+                    "CurrentWeapon",
                     "=",
                     "ButtonGroup.LabelText()"
                   ]
@@ -1401,7 +1401,7 @@
                     "BeamText",
                     "Text",
                     "=",
-                    "CurrentBeam"
+                    "CurrentWeapon"
                   ]
                 },
                 {
@@ -1560,7 +1560,7 @@
                     "value": "StringVariable"
                   },
                   "parameters": [
-                    "CurrentBeam",
+                    "CurrentWeapon",
                     "contains",
                     "\"Beam\""
                   ]
@@ -1580,7 +1580,7 @@
                   "parameters": [
                     "",
                     "BeamGroup",
-                    "CurrentBeam",
+                    "CurrentWeapon",
                     "Player.PointX(\"Gun\")",
                     "Player.PointY(\"Gun\")",
                     ""
@@ -1596,7 +1596,7 @@
                         "value": "StringVariable"
                       },
                       "parameters": [
-                        "CurrentBeam",
+                        "CurrentWeapon",
                         "contains",
                         "\"Beam\""
                       ]
@@ -1640,7 +1640,7 @@
                       "parameters": [
                         "BeamGroup",
                         "Player.Angle()",
-                        "Weapons[CurrentBeam].Force",
+                        "Weapons[CurrentWeapon].Force",
                         "1"
                       ]
                     }
@@ -1667,7 +1667,7 @@
                       "parameters": [
                         "BeamGroup",
                         "Player.Angle()",
-                        "Weapons[CurrentBeam].Force*-1",
+                        "Weapons[CurrentWeapon].Force * -1",
                         "1"
                       ]
                     },
